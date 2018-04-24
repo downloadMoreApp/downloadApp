@@ -36,15 +36,15 @@ new DownLoadUtils.Builder(MainActivity.this)<br>
                         //下载失败，错误原因errorMsg<br>
                     }<br>
 
-                    @Override<br>
-                    public void downLoading(float fraction) {<br>
-                        //下载中，进度fraction 例如：0.5<br>
-                    }<br>
+                    @Override
+                    public void downLoading(float fraction) {
+                        //下载中，进度fraction 例如：0.5
+                    }
 
-                    @Override<br>
-                    public void downLoadComplete(String apkFilePath) {<br>
-                        //apkFilePath 下载的apk保存的本地地址<br>
-                        //下载完成，自己处理<br>
-                        EquipmentInfUtils.installApk(MainActivity.this, apkFilePath);//安装apk<br>
-                    }<br>
-                }).build();<br>
+                    @Override
+                    public void downLoadComplete(String apkFilePath) {
+                        //apkFilePath 下载的apk保存的本地地址
+                        //下载完成，自己处理
+                        EquipmentInfUtils.installApk(MainActivity.this, apkFilePath);//安装apk
+                    }
+                }).build();
