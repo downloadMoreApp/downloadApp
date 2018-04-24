@@ -38,7 +38,7 @@
 
                     @Override
                     public void downLoading(float fraction) {
-                        //下载中，进度fraction 例如：0.5(进度由0.0～1.0)
+                        //下载中，进度fraction，进度由0.0～1.0 例如：0.5
                     }
 
                     @Override
