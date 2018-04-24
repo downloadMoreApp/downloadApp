@@ -31,14 +31,14 @@
                  .setBecomeSilent(true)//是否静默下载,默认 false
                  .setWifiUpdate(true)//是否wifi下载，默认true
                  .setDownLoadResultImpl(new DownLoadResultImpl() {
-                    @Override<br>
+                    @Override
                     public void downLoadError(String errorMsg) {
                         //下载失败，错误原因errorMsg
                     }
 
                     @Override
                     public void downLoading(float fraction) {
-                        //下载中，进度fraction 例如：0.5
+                        //下载中，进度fraction 例如：0.5(进度由0.0～1.0)
                     }
 
                     @Override
