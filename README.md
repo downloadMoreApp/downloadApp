@@ -5,8 +5,8 @@
 ------
 
     allprojects {
-    repositories {
-        maven {
+        repositories {
+            maven {
                 url "https://github.com/downloadMoreApp/downloadApp/raw/master"
             }
         }
