@@ -23,7 +23,6 @@
 
 使用示例：
 -----------------
-
     new DownLoadUtils.Builder(MainActivity.this)
                  .setApkName("123.apk")//apk名字
                  .setUpdateUrl("http://imtt.dd.qq.com/16891/C03D2C1DA1C6015287F1FE1F2D2DAAD1.apk?fsname=com.tencent.mobileqq_7.5.8_818.apk&csr=1bbd")//下载地址
@@ -38,7 +37,8 @@
 
                     @Override
                     public void downLoading(float fraction) {
-                        //下载中，进度fraction，进度由0.0～1.0 例如：0.5
+                        //下载中，进度fraction，进度由0.0～1.0
+                        //例如：0.5
                     }
 
                     @Override
