@@ -7,9 +7,9 @@
     allprojects {
     repositories {
         maven {
-            url "https://github.com/downloadMoreApp/downloadApp/raw/master"
+                url "https://github.com/downloadMoreApp/downloadApp/raw/master"
+            }
         }
-    }
     }
 
 
@@ -17,7 +17,7 @@
 -------------
 
     dependencies {
-    compile 'com.zh.download:version:1.0.0' exclude group: 'com.android.support'
+        compile 'com.zh.download:version:1.0.0' exclude group: 'com.android.support'
     }
 
 
