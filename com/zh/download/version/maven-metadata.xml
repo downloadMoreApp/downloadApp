@@ -3,7 +3,7 @@
   <groupId>com.zh.download</groupId>
   <artifactId>version</artifactId>
   <versioning>
-    <release>1.1.3</release>
+    <release>1.1.4</release>
     <versions>
       <version>1.0.4</version>
       <version>1.0.5</version>
@@ -15,7 +15,8 @@
       <version>1.1.1</version>
       <version>1.1.2</version>
       <version>1.1.3</version>
+      <version>1.1.4</version>
     </versions>
-    <lastUpdated>20180502022124</lastUpdated>
+    <lastUpdated>20180508034817</lastUpdated>
   </versioning>
 </metadata>
