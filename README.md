@@ -21,7 +21,7 @@
     }
     
     
-使用用例：
+使用用例：（若某项设置不需要用到，可直接使用默认即可，不需要设置）
 ---------------
     new DownLoadUtils.Builder(MainActivity.this)
                                    .setApkName("123.apk")//下载apk名字
