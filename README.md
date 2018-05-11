@@ -30,8 +30,9 @@
                        .setBreakpoint(true)//是否断点续下；默认 false
                        .setBecomeSilent(true)//是否静默下载；默认 false
                        .setWifiUpdate(true)//是否wifi下载；默认 true
-                       .setDownLoadResultImpl(new DownLoadResultImpl() {
-                         @Override
+                       .setNoWifiClose(true)//是否非wifi条件下关闭下载；默认false；（此功能需开启静默下载和断点续下）
+                       .setDownLoadResultImpl(new DownLoadResultImpl() {//下载状态回调
+                         @Override
                         public void downLoadError(String errorMsg) {
                             Toast.makeText(MainActivity.this,errorMsg,Toast.LENGTH_LONG).show();
                         }
@@ -45,4 +46,30 @@
                         public void downLoadComplete(String apkFilePath) {
                             EquipmentInfUtils.installApk(MainActivity.this, apkFilePath);
                         }
-                    }).build();
+                    })
+                    .setNetworkListener(new OnNetworkStatusListener() {//网络状态回调
+                            @Override
+                            public void onNetworkEmpty() {
+
+                            }
+
+                            @Override
+                            public void onNetworkDisconnect() {
+
+                            }
+
+                            @Override
+                            public void onNetworkNotAvailable() {
+
+                            }
+
+                            @Override
+                            public void onNetworkAvailableSuccessWifi() {
+
+                            }
+
+                            @Override
+                            public void onNetworkAvailableSuccessMobile() {
+
+                            }
+                        }).build();
