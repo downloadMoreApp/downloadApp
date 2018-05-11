@@ -17,7 +17,7 @@
 在app的build.gradle中添加如下代码：
 ---------------
     dependencies {
-        compile 'com.zh.download:version:1.0.4' exclude group: 'com.android.support'
+        compile 'com.zh.download:version:1.2.1' exclude group: 'com.android.support'
     }
     
     
